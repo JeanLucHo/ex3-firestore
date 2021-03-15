@@ -3,12 +3,13 @@ import Produit from "./Produit";
 import { useEffect, useState } from 'react';
 /******* Ex#3 - Étape D ********************************/ 
 // Importer l'objet bd du fichier firebase.js
+import bd from "../data/firebase";
 
 
 export default function ListeProduits(props) {
   /******* Ex#3 - Étape E ********************************/ 
   // Créer un "état" React pour les produits (utiliser useState)
-  
+  const [produits, setProduits] = useState([]);
     
   useEffect(() => {
     async function getProduits() {
@@ -20,10 +21,13 @@ export default function ListeProduits(props) {
       // [Suggestion : remarquez que la fonction getProduits() est marquée 'async'. Lorsque vous appelez la méthode Firestore qui retourne les produits, cette fonction 
       // est une Promesse, vous pouvez simplement utiliser la syntax 'await' pour attendre le résultat avant de remplir le tableau tabProduits 
       // (visionnez la capsule au sujet du code asynchrone en JavaScript)]
+      const rep = await bd.collection("ex3-produits").get();
+      rep.forEach((prd) => tabProduits.push(prd.data()));
 
       
       /******* Ex#3 - Étape G ********************************/ 
       // Modifier l'état des produits (initialisé ci-dessus avec useState) en utilisant le mutateur et le tableau tabProduits
+      setProduits(tabProduits);
       
     }
     getProduits();
@@ -41,7 +45,15 @@ export default function ListeProduits(props) {
           avoir l'attribut "etatPanier={props.etatPanier}" quand vous les générer ici : encore une fois, regardez 
           le code de l'exercice de classe.
         */}
-
+        {produits.map((prd) => (
+          <Produit
+            id={prd.id}
+            nom={prd.nom}
+            prix={prd.prix}
+            key={prd.id}
+            etatPanier={props.etatPanier}
+          />
+        ))}
       </ul>
     </div>
   );
