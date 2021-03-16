@@ -1,19 +1,19 @@
 {
   "files": {
-    "main.css": "/ex3-firestore/static/css/main.79150070.chunk.css",
-    "main.js": "/ex3-firestore/static/js/main.10edb8ec.chunk.js",
-    "main.js.map": "/ex3-firestore/static/js/main.10edb8ec.chunk.js.map",
-    "runtime-main.js": "/ex3-firestore/static/js/runtime-main.9505ad04.js",
-    "runtime-main.js.map": "/ex3-firestore/static/js/runtime-main.9505ad04.js.map",
-    "static/js/2.777cc3c7.chunk.js": "/ex3-firestore/static/js/2.777cc3c7.chunk.js",
-    "static/js/2.777cc3c7.chunk.js.map": "/ex3-firestore/static/js/2.777cc3c7.chunk.js.map",
-    "index.html": "/ex3-firestore/index.html",
-    "static/css/main.79150070.chunk.css.map": "/ex3-firestore/static/css/main.79150070.chunk.css.map",
-    "static/js/2.777cc3c7.chunk.js.LICENSE.txt": "/ex3-firestore/static/js/2.777cc3c7.chunk.js.LICENSE.txt"
+    "main.css": "/pvt-ex3-firestore/static/css/main.79150070.chunk.css",
+    "main.js": "/pvt-ex3-firestore/static/js/main.10edb8ec.chunk.js",
+    "main.js.map": "/pvt-ex3-firestore/static/js/main.10edb8ec.chunk.js.map",
+    "runtime-main.js": "/pvt-ex3-firestore/static/js/runtime-main.80142117.js",
+    "runtime-main.js.map": "/pvt-ex3-firestore/static/js/runtime-main.80142117.js.map",
+    "static/js/2.f8012605.chunk.js": "/pvt-ex3-firestore/static/js/2.f8012605.chunk.js",
+    "static/js/2.f8012605.chunk.js.map": "/pvt-ex3-firestore/static/js/2.f8012605.chunk.js.map",
+    "index.html": "/pvt-ex3-firestore/index.html",
+    "static/css/main.79150070.chunk.css.map": "/pvt-ex3-firestore/static/css/main.79150070.chunk.css.map",
+    "static/js/2.f8012605.chunk.js.LICENSE.txt": "/pvt-ex3-firestore/static/js/2.f8012605.chunk.js.LICENSE.txt"
   },
   "entrypoints": [
-    "static/js/runtime-main.9505ad04.js",
-    "static/js/2.777cc3c7.chunk.js",
+    "static/js/runtime-main.80142117.js",
+    "static/js/2.f8012605.chunk.js",
     "static/css/main.79150070.chunk.css",
     "static/js/main.10edb8ec.chunk.js"
   ]
